@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Notes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>📚 Vivek Notes</h2>
+</header>
+
+<input id="search" placeholder="Search notes...">
+
+<div class="filters">
+  <button onclick="filter('all')">All</button>
+  <button onclick="filter('bca')">BCA</button>
+  <button onclick="filter('programming')">Programming</button>
+</div>
+
+<div id="notes-container"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
