@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bolta Champaran</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f1f1;
+}
+
+/* Header */
+header {
+  background: #d32f2f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Navbar */
+nav {
+  background: #111;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  padding: 12px 18px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: red;
+}
+
+/* Breaking */
+.breaking {
+  background: yellow;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Layout */
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Bolta Champaran</h1>
+  <p>Champaran Ki Awaaz</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Breaking</a>
+  <a href="#">Politics</a>
+  <a href="#">Local</a>
+  <a href="#">Contact</a>
+</nav>
+
+<div class="breaking">
+  🔥 Breaking: Champaran ki sabse tez khabar!
+</div>
+
+<div class="container">
+
+  <div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c">
+      <h2>Top Headline</h2>
+      <p>Yahan aap apni main news likh sakte ho...</p>
+    </div>
+
+    <div class="card">
+      <h3>Local News</h3>
+      <p>Champaran ke local mudde...</p>
+    </div>
+
+    <div class="card">
+      <h3>Politics Update</h3>
+      <p>Political khabar yahan...</p>
+    </div>
+
+  </div>
+
+  <div class="sidebar">
+    <h3>Trending</h3>
+    <ul>
+      <li>Breaking News</li>
+      <li>Local Issue</li>
+      <li>Viral Update</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 Bolta Champaran | Vivek
+</footer>
+
+</body>
+</html>
