@@ -8,16 +8,21 @@
 <style>
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
 }
 
 /* Header */
 header {
-  background: #d32f2f;
+  background: linear-gradient(90deg, #c62828, #ff5252);
   color: white;
   padding: 15px;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
 }
 
 /* Navbar */
@@ -42,6 +47,7 @@ nav a:hover {
   background: yellow;
   padding: 10px;
   font-weight: bold;
+  text-align: center;
 }
 
 /* Layout */
@@ -56,20 +62,25 @@ nav a:hover {
 .card {
   background: white;
   padding: 15px;
+  border-radius: 10px;
   margin-bottom: 15px;
-  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* Sidebar */
 .sidebar {
   background: white;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 /* Footer */
@@ -108,12 +119,12 @@ footer {
     <div class="card">
       <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c">
       <h2>Top Headline</h2>
-      <p>Yahan aap apni main news likh sakte ho...</p>
+      <p>Yahan apni main news likho...</p>
     </div>
 
     <div class="card">
       <h3>Local News</h3>
-      <p>Champaran ke local mudde...</p>
+      <p>Champaran ke mudde...</p>
     </div>
 
     <div class="card">
@@ -124,11 +135,11 @@ footer {
   </div>
 
   <div class="sidebar">
-    <h3>Trending</h3>
+    <h3>🔥 Trending</h3>
     <ul>
       <li>Breaking News</li>
       <li>Local Issue</li>
-      <li>Viral Update</li>
+      <li>Viral Video</li>
     </ul>
   </div>
 
