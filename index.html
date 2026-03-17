@@ -4,152 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bolta Champaran | Vivek Tiwari</title>
+<title>Bolta Champaran</title>
 
-<!-- FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-<!-- AOS -->
-<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-
-<style>
-
-/* GLOBAL */
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: black;
-  color: white;
-}
-
-/* NAV */
-header {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
-}
-
-nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-/* HERO */
-.hero {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.hero img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6) scale(1.1);
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, transparent, black);
-}
-
-.hero-content {
-  text-align: center;
-  z-index: 2;
-}
-
-.hero h1 {
-  font-size: 60px;
-  color: red;
-}
-
-.hero h3 {
-  color: yellow;
-}
-
-.btn {
-  padding: 12px 25px;
-  margin: 10px;
-  border-radius: 30px;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-.red { background: red; }
-.yellow { background: yellow; color: black; }
-.glass {
-  background: rgba(255,255,255,0.1);
-  backdrop-filter: blur(10px);
-}
-
-.btn:hover { transform: scale(1.1); }
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-  gap: 25px;
-  padding: 50px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  padding: 30px;
-  border-radius: 15px;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  border-left: 5px solid red;
-}
-
-/* VIDEO */
-iframe {
-  width: 80%;
-  height: 400px;
-  display: block;
-  margin: auto;
-}
-
-/* NOTES */
-.note-card {
-  background: rgba(255,255,255,0.05);
-  padding: 25px;
-  border-radius: 15px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  opacity: 0.6;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
 </head>
 
 <body>
 
-<!-- NAV -->
 <header>
   <h2>Bolta Champaran</h2>
   <nav>
     <a href="#">Home</a>
-    <a href="#notes">Notes</a>
+    <a href="notes.html">Notes</a>
+    <a href="admin.html">Admin</a>
   </nav>
 </header>
 
@@ -163,74 +34,63 @@ footer {
     <h3>आवाज बिहार की</h3>
     <p>365 Days Transformation Journey</p>
 
-    <a href="#" class="btn red">▶ Watch Viral Video</a>
-    <a href="#" class="btn yellow">📘 Facebook</a>
-    <a href="#notes" class="btn glass">📚 Notes</a>
+    <div class="buttons">
+      <a href="#" class="btn red">▶ Watch Video</a>
+      <a href="#" class="btn yellow">📘 Facebook</a>
+      <a href="notes.html" class="btn glass">📚 Notes</a>
+    </div>
   </div>
 </section>
 
 <!-- CONTENT -->
 <section>
-  <h2 style="text-align:center">What I Cover</h2>
-
+  <h2>Coverage</h2>
   <div class="grid">
-    <div class="card">Local History</div>
-    <div class="card">Political Awareness</div>
     <div class="card">Ground Reporting</div>
-    <div class="card">Emotional Stories</div>
+    <div class="card">Political Awareness</div>
+    <div class="card">Local Stories</div>
+    <div class="card">Emotional Content</div>
   </div>
 </section>
 
-<!-- VIDEO -->
+<!-- YOUTUBE GRID -->
 <section>
-  <h2 style="text-align:center">🔥 Must Watch</h2>
+  <h2>🎥 Viral Videos</h2>
+  <div class="video-grid">
 
-  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO"></iframe>
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO"></iframe>
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO"></iframe>
+    <iframe src="https://www.youtube.com/embed/YOUR_VIDEO"></iframe>
+
+  </div>
 </section>
 
-<!-- NOTES -->
-<section id="notes">
-  <h2 style="text-align:center">📚 Vivek Notes</h2>
-
+<!-- FACEBOOK GRID -->
+<section>
+  <h2>📱 Facebook Posts</h2>
   <div class="grid">
+    <div class="card">Post 1</div>
+    <div class="card">Post 2</div>
+    <div class="card">Post 3</div>
+  </div>
+</section>
 
-    <div class="note-card">
-      <h3>BCA</h3>
-      <p>Semester notes</p>
-      <a href="#">Download</a>
-    </div>
-
-    <div class="note-card">
-      <h3>Programming</h3>
-      <p>Learn coding</p>
-      <a href="#">Download</a>
-    </div>
-
-    <div class="note-card">
-      <h3>Computer</h3>
-      <p>Core basics</p>
-      <a href="#">Download</a>
-    </div>
-
-    <div class="note-card">
-      <h3>Exam Prep</h3>
-      <p>Important Q&A</p>
-      <a href="#">Download</a>
-    </div>
-
+<!-- TIMELINE -->
+<section>
+  <h2>📈 Journey</h2>
+  <div class="timeline">
+    <div>🚀 Start</div>
+    <div>📈 Growth</div>
+    <div>🎯 1M Audience</div>
   </div>
 </section>
 
 <footer>
-  © Vivek Kumar Tiwari | Bolta Champaran
+  © Vivek Kumar Tiwari
 </footer>
 
-<!-- AOS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-AOS.init();
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
